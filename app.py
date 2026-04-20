@@ -7,7 +7,7 @@ st.set_page_config(page_title="Enterprise Knowledge Assistant", layout="wide")
 st.title("📚 Enterprise Knowledge Assistant")
 st.caption("Chat with your documents using RAG")
 
-------------------- API KEY -------------------
+#------------------- API KEY -------------------
 if "GOOGLE_API_KEY" in st.secrets:
     os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 elif os.getenv("GOOGLE_API_KEY"):
